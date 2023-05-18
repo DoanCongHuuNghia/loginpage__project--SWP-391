@@ -1,0 +1,80 @@
+/* pc */
+@media (min-width: 1024px) {
+    
+}
+
+/* tablet */
+@media (min-width: 740px) and (max-width: 1023px) {
+
+}
+
+@media only screen and (max-width: 739px) {
+	.container__overlay {
+		display: none;
+	}
+
+	.m-col-0 {
+		width: 0% !important;
+	}
+
+	.m-col-1 {
+        width: 100% !important;
+    }
+
+	.modal__auth {
+		width: 100%;
+		min-height: 100vh;
+	}
+
+	.container .container__form {
+		height: 100%;
+	}
+
+	.container .form__switch {
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+		padding: 0 12px;
+	}
+
+	.container .form__switch-sign-up-btn {
+		font-size: 20px;
+		color: var(--main-color);
+		display: block;
+	}
+
+	.container .form__switch-sign-in-btn {
+		font-size: 20px;
+		color: var(--main-color);
+		display: block;
+	}
+
+	.container .form__btn {
+		width: 100%;
+	}
+
+	.container .container__sign-in {
+		opacity: 1;
+		transform: translateX(0);
+	}
+	
+	.container .container__sign-up {
+		opacity: 0;
+		transform: translateX(-100%);
+	}
+
+	.container.right__panel-t-m--active .container__sign-in {
+		opacity: 0;
+		transform: translateX(100%);
+	}
+
+	.container.right__panel-t-m--active .container__sign-up {
+		opacity: 1;
+		transform: translateX(0);
+	}
+
+	.container.right__panel--active .container__sign-in {
+		transform: translateX(0);
+	}
+}
